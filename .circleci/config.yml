@@ -1,0 +1,12 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: adoptopenjdk/maven-openjdk11
+    steps:
+      - checkout
+      - run: 
+          name: install dependencies
+          command: | 
+            mvn depedency:tree
