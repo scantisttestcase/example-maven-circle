@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jonathell/multi-manager
+      - image: jonathell/multi-manager:1.0
       
     steps:
       - checkout
