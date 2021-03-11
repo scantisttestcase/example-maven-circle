@@ -9,5 +9,21 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
+            mvn install
             mvn dependency:tree
+          
+          name: run scantist scan
+          command: |
             bash <(curl -s https://scripts.scantist.com/ci-circle.sh)
+            
+          name: run whitesource scan
+          command: |
+            curl -LJO https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/whitesource-fs-agent.jar
+            java -jar whitesource-fs-agent.jar -c wss-unified-agent.config -d .
+            
+          name: run snyk scan
+          command: |
+            npm install -g snyk
+            snyk -v
+            snyk auth $SNYK_TOKEN
+            snyk monitor
