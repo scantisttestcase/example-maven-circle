@@ -5,6 +5,3 @@ email: false
  
 jdk:
 - openjdk8
-
-# after_success:
-#  - bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
