@@ -1,0 +1,10 @@
+image: timbru31/java-node 
+
+job:
+    #tags is to define which runner to use, tag-1 is the runner name
+    only:
+        - master
+        #- merge_requests 
+
+    script: 
+        - npm install
