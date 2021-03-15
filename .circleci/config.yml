@@ -14,8 +14,3 @@ jobs:
           command: | 
             mvn install
             mvn dependency:tree      
-
-      - run: 
-          name: run scantist scan
-          command: |
-            bash <(curl -s https://scripts.scantist.com/ci-circle.sh)    
