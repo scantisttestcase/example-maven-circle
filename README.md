@@ -1,6 +1,6 @@
 # Scantist example-maven-circle
 
-## Below is the depedencies (direct & transitive) from this project   
+## Below is the depedencies (direct & transitive) from this project - test
 
  [INFO] com.blackducksoftware.test:example-maven-travis:jar:0.1.0-SNAPSHOT<br/>
  [INFO] +- com.google.code.findbugs:jsr305:jar:3.0.1:compile<br/>
