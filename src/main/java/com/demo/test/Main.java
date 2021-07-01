@@ -1,4 +1,4 @@
-package com.blackducksoftware.test;
+package com.demo.test;
 
 import java.util.Arrays;
 
